@@ -25,7 +25,7 @@ with(data, plot(datetime, Global_active_power, type = "n", ylab = "Global Active
 with(data, lines(datetime, Global_active_power))
 
 # new plot: voltage over time
-with(data, plot(datetime, Voltage, type = "n", ylab = "Voltage"))
+with(data, plot(datetime, Voltage, type = "n"))
 with(data, lines(datetime, Voltage))
 
 # plot 3 (without legend box)
