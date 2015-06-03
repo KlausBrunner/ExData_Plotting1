@@ -2,13 +2,10 @@
 
 library(lubridate)
 data <- (function() {
-    # Reads data for the assignment. This is not parameterized as it's not expected to be reused.
-    # Returns:
-    #   Data frame
+    # Reads data for the assignment. This is not parameterized as it's not expected to be
+    # reused.  Returns: Data frame
     
-    data <- read.csv("household_power_consumption.txt", 
-                     sep=";", 
-                     na.strings="?")
+    data <- read.csv("household_power_consumption.txt", sep = ";", na.strings = "?")
     
     # create a nice datetime column
     data$datetime <- dmy_hms(paste(data$Date, data$Time))
@@ -20,4 +17,4 @@ data <- (function() {
 # plot to PNG device
 png(filename = "plot1.png")
 hist(data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
-dev.off()
+dev.off() 
