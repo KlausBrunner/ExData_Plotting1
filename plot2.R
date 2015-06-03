@@ -15,8 +15,6 @@ data <- (function() {
     
     # filter out rows we don't need, using explicit conversion to ensure same timezone
     data <- subset(data, datetime >= ymd("2007-02-01") & datetime < ymd("2007-02-03"))
-    
-    data
 })()
 
 # plot to PNG device
