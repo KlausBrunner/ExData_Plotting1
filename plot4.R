@@ -15,6 +15,7 @@ data <- (function() {
 })()
 
 # plot to PNG device
+# deliberately not using bg="transparent", as it looks ugly in some graphics viewers
 png(filename = "plot4.png")
 
 # 2-by-2 grid

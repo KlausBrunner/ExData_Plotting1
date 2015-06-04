@@ -15,6 +15,7 @@ data <- (function() {
 })()
 
 # plot to PNG device
+# deliberately not using bg="transparent", as it looks ugly in some graphics viewers
 png(filename = "plot2.png")
 with(data, plot(datetime, Global_active_power, type = "n", ylab = "Global Active Power (kilowatts)", 
     xlab = ""))

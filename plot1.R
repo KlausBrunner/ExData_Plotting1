@@ -15,6 +15,7 @@ data <- (function() {
 })()
 
 # plot to PNG device
+# deliberately not using bg="transparent", as it looks ugly in some graphics viewers
 png(filename = "plot1.png")
 hist(data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off() 

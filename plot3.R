@@ -15,6 +15,7 @@ data <- (function() {
 })()
 
 # plot to PNG device
+# deliberately not using bg="transparent", as it looks ugly in some graphics viewers
 png(filename = "plot3.png")
 with(data, plot(datetime, Sub_metering_1, type = "n", ylab = "Energy sub metering", xlab = ""))
 
